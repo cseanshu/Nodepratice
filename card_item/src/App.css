@@ -1,0 +1,78 @@
+
+.main-container{
+  background-color: rgb(59, 146, 146);
+  max-width: 300px;
+  max-height: 500px;
+  border: 2px solid grey;
+  border-radius: 5px ;
+  margin: 10px;
+}
+.details-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-container img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 4px;
+
+}
+.discription-container,
+.details-container {
+  color: aliceblue;
+  font-weight: 700;
+}
+.badge-and-like{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.badge-and-like  button{
+  border-radius: 50%;
+  background-color: rgb(57, 55, 55);
+  margin-right: 5px;
+}
+.addproduct-heading{
+  text-align: center;
+  color: green;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 100%;
+}
+.my-form{
+ width: 400px;
+ padding: 10px;
+ background-color: aqua;
+ border: 2px solid black;
+}
+.my-form input{
+  padding:5px 80px 5px 80px;
+  border-radius: 5px;
+}
+.my-form select{
+  padding:5px 110px 5px 110px;
+  border-radius: 5px;
+}
+.my-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(27, 125, 42);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-form button[type="submit"]:hover {
+  background-color: darkgray;
+}
+
