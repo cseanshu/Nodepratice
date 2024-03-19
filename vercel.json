@@ -20,7 +20,7 @@
         },
         {
           "src": "/",
-          "dest":"dist/index.js"
+          "dest":"dist/index.html"
         },
         {
           "src": "/(.+)",
