@@ -116,8 +116,8 @@ const cors=require('cors')
 // server.use('/products',productRouter.productrouter)
 
 // middleware for the user api
-const userRouter=require('./Routes/userRoutes');
-server.use('/users',userRouter.userrouter);
+// const userRouter=require('./Routes/userRoutes');
+// server.use('/users',userRouter.userrouter);
 server.use(cors());
 server.use(express.static('./public/dist'))
 // console.log("ENV PASSWORD", process.env.DB_PASSWORD);
@@ -129,8 +129,6 @@ server.use('/products',productRouter.productrouter);
 server.use('*',(req,res)=>{
     res.sendFile(__dirname+'/public/dist/index.html')
 })
-
-
 const main = async () => {
     // await mongoose.connect('mongodb://127.0.0.1:27017/ecommerce');   //this is connecting with the localhost
     await mongoose.connect(process.env.MONGO_URL)
